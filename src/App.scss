@@ -1,0 +1,65 @@
+.app {
+  min-height: 100vh;
+  background: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.example {
+  min-width: 430px;
+  width: fit-content;
+  display: block;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08), 0 10px 20px rgba(0, 0, 0, 0.11);
+  }
+
+  h2 {
+    &:nth-child(1) {
+      color: rgba(0, 0, 0, 0.8);
+      margin: 0;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    &:nth-child(2) {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 48px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    background: #fd8c04;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+  }
+}
+
+.hide-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ec5858;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
